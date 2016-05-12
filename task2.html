@@ -1,0 +1,49 @@
+<html>
+<head>
+<script type="text/javascript">
+function sub()
+{
+if(document.getElementById("t1").value == "")
+alert("Please enter your first name");
+else if(document.getElementById("t2").value == "")
+alert("Please enter your second name");
+else if (document.getElementById("t3").value=="")
+alert("Please enter your gender");
+else if(document.getElementById("t4").value == "")
+alert("Please enter your year of birth exam");
+else if(document.getElementById("t5").value == "")
+alert("Please enter your kcse grade");
+else
+alert("Form has been submitted");
+}
+n = parseInt (n);
+if (isNaN(n))
+
+{
+alert("Please Enter a Number");
+}
+else if (n == 0)
+{
+alert("The number is zero");
+}
+else if (n%2)
+{
+alert("The number is odd");
+}
+</script>
+</head>
+<body>
+<form>
+<p align="center">
+first name:<input type="text" id="t1"><br><br>
+second name:<input type="text" id="t2"><br><br>
+gender:<input type="text" id="t3"><br><br>
+year of birth:<input type="text" id="t4"><br><br>
+kcse grades:<input type="text" id="t5"><br><br>
+
+<input type="button" value="Submit" onclick="sub()">
+<input type="reset" value="Clear All">
+</p>
+</form>
+</body>
+</html>
